@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+
+    <title>Hello, world</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+            margin: 5px;
+            background-color: #333333;
+        }
+
+            li a {
+                display: block;
+                width: 75px;
+                color: white;
+                text-align: center;
+                padding: 16px;
+                text-decoration: underline;
+            }
+
+                li a:hover {
+                    background-color: #111111;
+                }
+    </style>
+
+    <script>
+        $(document).on('click', 'li', function () {
+            alert($(this).text());
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <ul class="NumberSection">
+            <li><a>One</a></li>
+            <li><a>Two</a></li>
+            <li><a>Three</a></li>
+            <li><a>Four</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+
